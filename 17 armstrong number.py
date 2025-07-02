@@ -31,8 +31,8 @@ else:
 
     while temporary_variable > 0:
         digit_variable = temporary_variable % 10
-        cube_variable = digit_variable ** length_variable
-        sum = sum + cube_variable
+        any_variable = digit_variable ** length_variable
+        sum = sum + any_variable
         temporary_variable //= 10
     
     if sum  == number:

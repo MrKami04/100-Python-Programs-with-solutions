@@ -1,2 +1,2 @@
 
-        sum = sum + cube_variable
+    print(sum)
