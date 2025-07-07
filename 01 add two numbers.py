@@ -18,3 +18,11 @@ number_2 = float(input("Enter the number_2 is :"))
 sum  = number_1 + number_2
 print("-----------------------------")
 print(f"Sum of the two numbers is:{sum} ")
+
+print()
+# function for two number adds
+def add(a,b):
+    c = a + b
+    return c
+print(f"function sum is { add(4,3)}")
+
