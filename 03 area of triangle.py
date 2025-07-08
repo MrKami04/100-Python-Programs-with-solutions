@@ -13,3 +13,4 @@ def triangle_area():
     area = (0.5) * base * height
     return area
 print(f"area of triangle using function {triangle_area()}")
+

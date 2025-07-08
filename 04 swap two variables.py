@@ -27,4 +27,12 @@ variable_1 , variable_2 = variable_2 , variable_1
 print(f"the value of variable_1 is :{variable_1}")
 print(f"the value of variable_2 is :{variable_2}")
 
+# by function
+def swap(var_1, var_2):
+    var_1 , var_2 = var_2, var_1
+    return var_1, var_2
+
+after = swap(12,34)
+
+print(after)
 
