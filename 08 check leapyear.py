@@ -15,3 +15,10 @@ elif (year % 4 == 0) and (year % 100 != 0):
 else:
     print(year, " is not a leap year.") 
 
+# by function
+
+def leapYear():
+    model = (year,"is a leap year") if (year%400==0) and (year%100==0) else (year,"ia a leapyear") if (year%4==0) and (year%100 !=0) else (year, "is not a leap year")
+    return model
+print(f"by function {leapYear()}")
+

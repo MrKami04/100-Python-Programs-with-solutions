@@ -8,3 +8,10 @@ if number % 2 == 0:
     
 else:
     print("Number is odd😂.")    
+    
+    
+# by function
+
+def odd_no():
+    return  "number is even" if number % 2 == 0 else "number is odd"
+print(f"by function {odd_no()}")
