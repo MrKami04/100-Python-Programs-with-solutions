@@ -5,4 +5,12 @@ celsius = int(input("Enter temperature in celsius:"))
 
 fahrenheit = (celsius) * (9/5) + 32
 
-print("the converted value is", fahrenheit , "Fahrenheit")
+print(f"the converted value is {round(fahrenheit, 2)} Fahrenheit")
+
+
+print("😪 --------------------- 😫")
+# by function
+
+def temper():
+    return (celsius) * (9/5) + 32
+print(f"temperature in fahrenhiete {round(temper(), 2)}")
