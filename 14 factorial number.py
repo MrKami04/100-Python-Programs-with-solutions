@@ -32,3 +32,11 @@ def factorial_1(number):
     
 result = factorial_1(number)
 print("Factorial (by function method) of the number is:", result)
+
+print("🤑 -------------------------- 🤑")
+# as we write 
+
+from math import prod
+
+factorial = prod(range(1, number+1))
+print(f"factorial of given number :{factorial}")
