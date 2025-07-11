@@ -16,3 +16,15 @@ else:
         variable1 = variable2
         variable2 = variable3
         print(variable3)
+        
+print("😀 --------------------------- 😋")
+# by fiunction
+def fibonacci_series(n):
+    fib = [0, 1]
+    [fib.append(fib[-1] + fib[-2]) for _ in range(2, n)]
+    [print(num) for num in fib[:n]]
+
+
+fibonacci_series(number)
+
+    
