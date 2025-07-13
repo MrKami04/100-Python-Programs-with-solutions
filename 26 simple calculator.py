@@ -20,6 +20,24 @@ elif choice == 4:
     
 else:
     print("invalid input!")
+    
+    
+# by function
+print("😀 --------------------------------- .😆")
+
+def calculator(number1, number2, choice):
+    operations = {
+        1: number1 + number2,
+        2: number1 - number2,
+        3: number1 * number2,
+        4: number1 / number2 if number2 != 0 else "Division by zero error"
+    }
+    print(operations.get(choice, "Invalid input!"))
+
+print("Press 1 for addition\nPress 2 for subtraction\nPress 3 for multiplication\nPress 4 for division")
+c = int(input("Enter your choice from 1 to 4: "))
+calculator(number1, number2, c)
+
 
 
 
