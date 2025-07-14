@@ -11,3 +11,7 @@ else:
     print(" it is not palindrome.")
 
 
+
+# by comprehension
+print("it is a palindrome string." if (string_variable := input("Enter a string: ")) == string_variable[::-1] else "it is not palindrome.")
+
