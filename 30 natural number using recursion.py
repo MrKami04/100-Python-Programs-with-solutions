@@ -1,7 +1,7 @@
 # program that to find the su of natural number using recursion.
 print("😍 ------------------------- 😍")
 
-number = int(input("enter the numberupto sum :"))
+number = int(input("enter the number upto sum :"))
 def natural_number_sum(number):
     if number <= 1:
         return number

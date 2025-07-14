@@ -19,3 +19,11 @@ for i in range(len(variable_A)):
         
 for r in result:
     print(r)
+    
+    
+# by comprehension 
+print("😍 ------------------------- 😍")
+result = [[variable_A[i][j] + variable_B[i][j] for j in range(len(variable_A[0]))] for i in range(len(variable_A))]
+
+for r in result:
+    print(r)
