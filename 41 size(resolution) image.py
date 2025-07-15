@@ -14,3 +14,7 @@ img_variable = Image.open("E:/image/ww.jpg")
 width ,height = img_variable.size
 
 print(width, "x" , height)
+
+
+# comprehension way
+[print(f"{w} x {h}") for w, h in [img_variable.size]]
