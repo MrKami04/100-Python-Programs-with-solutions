@@ -18,3 +18,7 @@ dictionary_3 = dictionary_2.copy()
 dictionary_3.update(dictionary_1)
 
 print(dictionary_3)
+
+
+# comprehension
+[print((lambda d: (d.update(dictionary_1), d)[1])(dictionary_2.copy()))]  # Method 3 using lambda for brevity
