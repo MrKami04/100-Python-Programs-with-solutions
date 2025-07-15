@@ -21,3 +21,9 @@ for i in range(len(variable_A)):
             
 for i in result:
     print(i) 
+    
+
+print("😍 ------------------------- 😍")
+# by comprehension
+result = [[sum(variable_A[i][k] * variable_B[k][j] for k in range(len(variable_B))) for j in range(len(variable_B[0]))] for i in range(len(variable_A))]
+[print(i) for i in result]
