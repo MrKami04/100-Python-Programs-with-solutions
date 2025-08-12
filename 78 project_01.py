@@ -1,35 +1,30 @@
 # Restaurant Project
 
-# Menu data: item with price
-menu = {
+menu = {              # Menu data: item with price
     "Burger": 350,"Pizza": 800,"Pasta": 500,"Fries": 200,"Coffee": 150
 }
-# Discounts: name with percentage
-discounts = {
+
+discounts = {                # Discounts: name with percentage
     "Student": 10, "Senior Citizen": 15, "Weekend Special": 5
 }
 order_history = []  # Order history list
 
-# Function to display welcome message
-def welcome():
+def welcome():     # Function to display welcome message
    print("------❤ Welcome to Pasta La Vista, Baby! ❤------")
    print("We are happy to serve you!\n")
    
-# Function to call waiter
-def call_waiter():
+def call_waiter():    # Function to call waiter
     choice = input("Type 'call' to call the waiter: ").strip().lower()
     if choice == "call":
         print("Waiter is on the way!\n")
 
-# Function to display menu
-def display_menu():
+def display_menu():    # Function to display menu
     print("----- Menu -----")
     for item, price in menu.items():
         print(f"{item}: Rs {price}")
     print()
 
-# Function to take order from customer
-def take_order():
+def take_order():    # Function to take order from customer
     order_list = []
     while True:
         item = input("Enter item name to order (or 'done' to finish): ").title()
@@ -42,12 +37,11 @@ def take_order():
             print("Item not found. Please choose from the menu.\n")
     return order_list
 
-# Function to calculate bill
-def calculate_bill(order_list):
+def calculate_bill(order_list):    # Function to calculate bill
     return sum(menu[item] for item in order_list)
 
-# Function to apply discount
-def apply_discount(bill):
+
+def apply_discount(bill):    # Function to apply discount
     print("\nAvailable Discounts:")
     for d, p in discounts.items():
         print(f"{d}: {p}% off")
@@ -56,8 +50,7 @@ def apply_discount(bill):
         bill -= bill * (discounts[choice] / 100)
     return bill
 
-# Function for tip
-def give_tip():
+def give_tip():          # Function for tip
     try:
         tip = float(input("Enter tip amount for waiter: Rs "))
         return tip

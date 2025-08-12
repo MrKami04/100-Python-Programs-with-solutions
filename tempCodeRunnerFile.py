@@ -1,2 +1,1 @@
-
-        print("it is not armstrong number.")
+restaurant_system()
