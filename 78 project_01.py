@@ -40,7 +40,6 @@ def take_order():    # Function to take order from customer
 def calculate_bill(order_list):    # Function to calculate bill
     return sum(menu[item] for item in order_list)
 
-
 def apply_discount(bill):    # Function to apply discount
     print("\nAvailable Discounts:")
     for d, p in discounts.items():
@@ -58,8 +57,7 @@ def give_tip():          # Function for tip
         print("Invalid amount. No tip added.")
         return 0
 
-# Function for payment method
-def payment_method():
+def payment_method():    # Function for payment method
     methods = ["Cash", "Card", "Online"]
     print("\nPayment Methods:", ", ".join(methods))
     choice = input("Choose payment method: ").title()
@@ -68,8 +66,7 @@ def payment_method():
     else:
         print("Invalid choice. Defaulting to Cash.")
 
-# Function to store order in history
-def save_order(name, order_list, total_amount):
+def save_order(name, order_list, total_amount):    # Function to store order in history
     order_data = {
         "Customer Name": name,
         "Items": order_list,
@@ -77,8 +74,8 @@ def save_order(name, order_list, total_amount):
     }
     order_history.append(order_data)
 
-# Function to collect customer feedback
-def get_feedback():
+
+def get_feedback():    # Function to collect customer feedback
     feedback = input("\nPlease share your feedback: ")
     print("Thank you for your feedback!")
 
